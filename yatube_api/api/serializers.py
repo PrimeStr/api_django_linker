@@ -1,10 +1,11 @@
-from posts.models import Comment, Post, Group, Follow, User
 from rest_framework.relations import SlugRelatedField
 from rest_framework.serializers import (ModelSerializer,
                                         CurrentUserDefault,
                                         UniqueTogetherValidator,
                                         ValidationError,
                                         PrimaryKeyRelatedField)
+
+from posts.models import Comment, Post, Group, Follow, User
 
 
 class PostSerializer(ModelSerializer):
