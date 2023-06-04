@@ -1,5 +1,4 @@
 Django==3.2.16
-python-dotenv==0.19.2
 django-filter==23.2
 pytest==6.2.4
 pytest-pythonpath==0.7.3
