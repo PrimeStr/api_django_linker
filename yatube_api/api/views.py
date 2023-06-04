@@ -5,9 +5,9 @@ from rest_framework.permissions import IsAuthenticatedOrReadOnly
 
 from api.permissions import OwnerOrReadOnly
 from api.serializers import (PostSerializer,
-                          CommentSerializer,
-                          GroupSerializer,
-                          FollowSerializer)
+                             CommentSerializer,
+                             GroupSerializer,
+                             FollowSerializer)
 from posts.models import Post, Group, Comment, User
 
 
