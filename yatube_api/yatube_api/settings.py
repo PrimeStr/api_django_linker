@@ -1,10 +1,10 @@
 import os
 from datetime import timedelta
 from django.core.management.utils import get_random_secret_key
-from dotenv import load_dotenv
+from dotenv import load_dotenv, find_dotenv
 from pathlib import Path
 
-load_dotenv()
+load_dotenv(find_dotenv())
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
