@@ -9,7 +9,7 @@ from rest_framework.serializers import (ModelSerializer,
 
 class PostSerializer(ModelSerializer):
     author = SlugRelatedField(slug_field='username', read_only=True)
-    
+
     class Meta:
         fields = ('id', 'author', 'group', 'text', 'pub_date', 'image')
         model = Post
@@ -20,7 +20,7 @@ class CommentSerializer(ModelSerializer):
         read_only=True, slug_field='username'
     )
     post = PrimaryKeyRelatedField(read_only=True)
-    
+
     class Meta:
         fields = ('id', 'author', 'post', 'text', 'created')
         model = Comment
@@ -42,7 +42,7 @@ class FollowSerializer(ModelSerializer):
         slug_field='username',
         queryset=User.objects.all(),
     )
-    
+
     class Meta:
         fields = ('user', 'following')
         model = Follow
@@ -55,7 +55,7 @@ class FollowSerializer(ModelSerializer):
                 fields=('user', 'following',),
             )
         ]
-    
+
     def validate(self, data):
         following = data.get('following')
         user = self.context['request'].user
