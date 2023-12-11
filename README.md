@@ -1,4 +1,4 @@
-# API для Yatube
+# API для DjangoLinker
 
 [![Python](https://img.shields.io/badge/Python-%203.9-blue?style=flat-square&logo=Python)](https://www.python.org/)
 [![Django](https://img.shields.io/badge/Django-%203.2.16-blue?style=flat-square&logo=django)](https://www.djangoproject.com/)
@@ -7,7 +7,7 @@
 
 ## Описание
 
-Яндекс Практикум. Спринт №9. Итоговый проект. API для Yatube.
+API для DjangoLinker.
 
 ## Функционал
 
@@ -22,13 +22,13 @@
 1. Клонировать репозиторий:
 
     ```python
-    git clone https://github.com/PrimeStr/api_final_yatube.git
+    git clone https://github.com/PrimeStr/api_django_linker.git
     ```
 
 2. Перейти в папку с проектом:
 
     ```python
-    cd yatube_api/
+    cd django_linker_api/
     ```
 
 3. Установить виртуальное окружение для проекта:
@@ -60,10 +60,10 @@
     pip install -r requirements.txt
     ```
 
-6. Перейти в папку yatube_api и выполнить миграции на уровне проекта:
+6. Перейти в папку django_linker_api и выполнить миграции на уровне проекта:
 
    ```python
-   cd yatube_api
+   cd django_linker_api
    
    # для OS Linux и MacOS
     python3 manage.py migrate
